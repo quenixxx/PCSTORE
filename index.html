@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Test</title>
+</head>
+<body>
+    <header class="container navbar">
+        <h1>PCSTORE</h1>
+        <nav class="main-nav">
+            <a href="">Главная</a>
+            <a href="">Каталог</a>
+            <a href="#hero">О нас</a>
+            <a href="#contact">Контакты</a>
+        </nav>
+        <nav class="secondary-nav">
+            <a href="#dev">Доставка и оплата</a>
+            <a href="">Личный кабинет</a>
+            <a href="" class="cart-icon"><img src="./media/Shopping Bag.svg" alt=""></a>
+        </nav>
+    </header>
+
+
+    <main>
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Качественные и<br>надежные<br>комплектующие<br>для ПК</h2>
+            <button class="hero-button">Каталог</button>
+        </div>
+        <img src="media/line.png" alt="line" class="hero-divider-img">
+        <img src="./media/header_img.png" alt="" class="hero-image">
+    </section>
+    <section id="about-us">
+        <div class="container about-us-content">
+            <img class="glow" src="./media/about.png" alt="Блок о нас">
+            <div class="about-us-text">
+                <h2 style="background:none;">О нас</h2>
+                <p>Мы продаем качественные и надежные комплектующие для Пк. У нас более 1000+ положительных отзывов и более 3000+ покупателей!</p>
+            </div>
+        </div>
+        <img src="media/line.png" alt="line" class="hero-divider-img">
+    </section>
+    <section class="popular">
+        <h2>Часто покупают</h2>
+        <div class="popular-list">
+            <div class="card">
+                <img src="./media/RTX3060TI.png" alt="Palit RTX 3060TI">
+                <p>Palit RTX 3060TI</p>
+                <button>Заказать</button>
+            </div>
+            <div class="card">
+                <img src="./media/COREI5.png" alt="Intel core I5 13400">
+                <p>Intel core I5 13400</p>
+                <button>Заказать</button>
+            </div>
+            <div class="card">
+                <img src="./media/I7CORE.png" alt="Intel core I7 14400">
+                <p>Intel core I7 14400</p>
+                <button>Заказать</button>
+            </div>
+        </div>
+        <img src="media/line.png" alt="line" class="hero-divider-img">
+    </section>
+    <section class="delivery-payment" id="dev">
+        <h2>Доставка и оплата</h2>
+        <div class="delivery-payment-all container">
+            <div class="delivery-card">
+                <h2>Доставка</h2>
+                <p>Доставим до вашего дома <br>за 1 день. <br>Бесплатная доставка</p>
+            </div>
+            <div class="delivery-card">
+                <img src="./media/delivery.png" alt="">
+            </div>
+            <div class="delivery-card">
+                <img src="./media/payment.png" alt="">
+            </div>
+            <div class="delivery-card">
+                <h2>Доставка</h2>
+                <p>Принимаем оплату со всех <br>карт РФ. <br>Без коммисий!</p>
+            </div>
+        </div>
+    </section>
+    <section id="form">
+        <div>
+            <h2 class="form-slogan">Остались вопросы?</h2>
+            <p>Заполните заявку и мы вам перезвоним!</p>
+            <form action="">
+                <input type="text" placeholder="Имя" required>
+                <input type="tel" placeholder="+7 (925) 999 23 12">
+                <input class="btn" type="submit" value="ОТПРАВИТЬ">
+        </div>
+        </form>
+    </section>
+    <section id="contact">
+        <div class="our-contact container">
+            <div class="contancts">
+                <h2>Наши контакты:</h2>
+                <div class="contanct-row">
+                    <img src="./media/phone.svg" alt="" width="40px">
+                    <p>+7 (951) 000 00 00</p>
+                </div>
+                <div class="contanct-row">
+                    <img src="./media/wk.svg" alt="" width="40px">
+                    <p>Москва, Пушкинская 52</p>
+                </div>
+                <div class="contanct-row">
+                    <img src="./media/mail.svg" alt="" width="40px">
+                    <p>PCSTORE@store.com</p>
+                </div>
+                <button>Оставить заявку</button>    
+            </div>
+            <div class="map">
+                <img src="./media/map.png" alt="" width="496px" style="box-shadow: 0 0 400px 0 rgba(51, 51, 51, 0.329);">
+            </div>
+        </div>
+    </section>
+    <footer>
+
+    <section id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p><a href="#cover" style="text-decoration: none; color: white;">Главная</a></p>
+                    <p><a href="#catalog" style="text-decoration: none; color: white;">Каталог</a></p>
+                   <p><a href="#contact" style="text-decoration: none; color: white;">Контакты</a></p>
+                </div>
+                 <div class="footer-content">
+                    <div class="footer-text">
+                        <p>Договор оферты</p>
+                        <p>Политика конфиденциальности</p>
+                        <p>Условия и правила</p>
+                    </div>
+                </div>
+            </div>
+            <h4>Copyright © PCSTORE, 2000-2025</h4>
+        </div>
+    </section>
+
+</footer>
+
+</main>
+</body>
+</html>

@@ -1,0 +1,348 @@
+@font-face {
+    font-family: 'Benzin';
+    src: url('fonts/Benzin-Regular.woff2') format('woff2'),
+         url('fonts/Benzin-Regular.woff') format('woff'),
+         url('fonts/Benzin-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Benzin';
+    src: url('fonts/Benzin-Bold.woff2') format('woff2'),
+         url('fonts/Benzin-Bold.woff') format('woff'),
+         url('fonts/Benzin-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.container{
+    width: 1140px;
+    margin: 0 auto;
+    background-color: #10131A;
+}
+body, h1, h2{
+    margin: 0;
+    background-color: #10131A;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+h1 {
+    font-size: 28px;
+    color: white;
+    font-family: 'Benzin', sans-serif;
+    margin: 0;
+}
+
+.main-nav, .secondary-nav {
+    display: flex;
+    align-items: center;
+}
+
+.main-nav {
+    gap: 50px;
+}
+
+.secondary-nav {
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.cart-icon {
+    font-size: 20px;
+}
+
+.hero {
+    width: 100%;
+    background-color: #10131A;
+    padding: 100px 0;
+    position: relative;
+}
+
+.hero-content {
+    width: 1140px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.hero h2 {
+    color: white;
+    font-size: 96px;
+    line-height: 1.2;
+    margin-bottom: 30px;
+    font-family: 'Benzin', sans-serif;
+    font-weight: bold;
+    background: none;
+}
+
+.hero-button {
+    background-color: #FF0000;
+    color: white;
+    width: 240px;
+    height: 49px;
+    border: none;
+    border-radius: 15px;
+    font-size: 32px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.hero-button:hover {
+    background-color: #FF8533;
+}
+
+.hero-image {
+    position: absolute;
+    right: 0;
+    bottom: 10%;
+    width: 40%;
+    height: 80%;
+    object-fit: contain;
+}
+.hero-divider-img {
+    display: block;
+    margin: 100px auto 0 auto;
+    width: 80vw;
+}
+.about-us-content{
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+
+}
+.about-us-text{
+    margin-left: 60px;
+    color:white;
+    font-size: 24px;
+    font-weight: 100;
+}
+.about-us-text h2{
+    font-weight: 200;
+    font-size: 48px;
+}
+
+.popular {
+    margin-top: 60px;
+    text-align: center;
+}
+.popular > h2 {
+    color: white;
+    font-size: 40px;
+    margin-bottom: 30px;
+    font-family: 'Benzin', sans-serif;
+}
+.popular-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.card {
+    background: #181b22;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 20px;
+    padding: 20px 20px 0 20px;
+    width: 220px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card img {
+    width: 100%;
+    border-radius: 15px;
+}
+.card p {
+    color: white;
+    margin: 15px 0 15px 0;
+    font-size: 18px;
+}
+.card button {
+    background: #ff0000;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 10px 0;
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+.delivery-payment {
+    margin-top: 60px;
+    text-align: center;
+}
+.delivery-payment  h2 {
+    color: #fff;
+    font-size: 36px;
+    margin-bottom: 30px;
+    font-family: 'Benzin', sans-serif;
+}
+.delivery-payment-all {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 40px;
+    max-width: 1400px;
+    margin-top: 80px;
+}
+.delivery-card {
+    width: 450px;
+    height: 220px;
+    background: #181b22;
+    border: 2px solid #ff0000;
+    border-radius: 30px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Benzin', sans-serif;
+    font-size: 22px;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 0;
+}
+.delivery-card h2 {
+    color: #ff0000;
+    font-size: 32px;
+    margin-bottom: 15px;
+    margin-top: 0;
+    background: none;
+}
+.delivery-card p {
+    margin: 0;
+    font-size: 22px;
+    font-family: inherit;
+    font-weight: 600;
+}
+.delivery-card img {
+    max-width: 100%;
+    max-height: 100%;
+}
+#form {
+    height: 626px;
+    background-color: #05050518;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.form-slogan{
+    background: none;
+    color: white;
+    font-size: 40px;
+    font-weight: 200;
+}
+#form p{
+    color: #CBCBCB;
+    font-weight: 100;
+    font-size: 20px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+}
+input{
+    background: none;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 363px;
+    height: 57px;
+    font-size: 25px;
+    padding-left: 15px;
+    margin-top: 15px;
+}
+.btn{
+    background-color: #FF0000;
+    width: 380px;
+    height: 57px;
+    color: black;
+    border: none;
+    border-radius: 15px;
+    margin-top: 35px;
+}
+#contact{
+    background-color: #6565652d;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 600px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}   
+.our-contact, .our-contact h2{
+    background: none;
+}
+.our-contact{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contanct-row{
+    display: flex;
+}
+#contact h2{
+    color: white;
+    font-size: 40px;
+    font-weight: 300;
+    background: none;
+}
+#contact p{
+    color: white;
+    margin-left:10px;
+    font-size: 24px;
+}
+#contact button{
+    width: 267px;
+    height: 54px;
+    background: #FF0000;
+    color: black;
+    border-radius: 15px;
+    border: none;
+    font-size: 24px;
+    margin-top: 15px;
+}
+#footer {
+    color: white;
+    margin-top: 50px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#footer p {
+    font-size: 12px;
+    text-decoration: none;
+
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer h4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    padding-top: 30px;
+    font-weight: 400;
+}
