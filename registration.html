@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация | PCSTORE</title>
+    <link rel="stylesheet" href="registration.css">
+</head>
+<body>
+    <header class="container navbar">
+        <h1>PCSTORE</h1>
+        <nav class="main-nav">
+            <a href="">Главная</a>
+            <a href="catalog.html">Каталог</a>
+            <a href="#hero">О нас</a>
+            <a href="#contact">Контакты</a>
+        </nav>
+        <nav class="secondary-nav">
+            <a href="#dev">Доставка и оплата</a>
+            <a href="">Личный кабинет</a>
+            <a href="" class="cart-icon"><img src="./media/Shopping Bag.svg" alt=""></a>
+        </nav>
+    </header>
+    <main class="reg-main">
+        <form class="reg-form" id="regForm">
+            <h2 class="reg-title">Регистрация</h2>
+            <input type="text" placeholder="Имя" required>
+            <input type="password" placeholder="Пароль" id="reg-pass" required>
+            <input type="password" placeholder="Повторный пароль" id="reg-pass2" required>
+            <input type="email" placeholder="Почта" required>
+            <div class="show-pass">
+                <input type="checkbox" id="showPass">
+                <label for="showPass">Показать пароль</label>
+            </div>
+            <div class="pass-tip">Пароль должен содержать не менее 8 символов, буквы и цифры</div>
+            <button type="submit" class="reg-btn">Зарегистрироваться</button>
+        </form>
+    </main>
+    <script>
+            document.getElementById('showPass').addEventListener('change', function() {
+            const pass1 = document.getElementById('reg-pass');
+            const pass2 = document.getElementById('reg-pass2');
+            const type = this.checked ? 'text' : 'password';
+            pass1.type = type;
+            pass2.type = type;
+        });
+    </script>
+</body>
+</html>

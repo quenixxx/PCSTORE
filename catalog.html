@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Каталог процессоров | PCSTORE</title>
+    <link rel="stylesheet" href="catalog.css">
+</head>
+<body>
+    <header class="container navbar">
+        <h1>PCSTORE</h1>
+        <nav class="main-nav">
+            <a href="">Главная</a>
+            <a href="catalog.html">Каталог</a>
+            <a href="#hero">О нас</a>
+            <a href="#contact">Контакты</a>
+        </nav>
+        <nav class="secondary-nav">
+            <a href="#dev">Доставка и оплата</a>
+            <a href="">Личный кабинет</a>
+            <a href="" class="cart-icon"><img src="./media/Shopping Bag.svg" alt=""></a>
+        </nav>
+    </header>                                               
+    <main class="catalog-main container">
+        <aside class="sidebar">
+            <div class="filter-block">
+                <div class="filter-header">Цена ₽</div>
+                <div class="filter-content">
+                    <div class="price-range">
+                        <input type="text" placeholder="от 1000">
+                        <input type="text" placeholder="до 20000">
+                    </div>
+                </div>
+            </div>
+            <div class="filter-block">
+                <div class="filter-header">Производитель</div>
+                <div class="filter-content">
+                    <div class="filter-tags">
+                        <button>DeepCool</button>
+                        <button>Intel</button>
+                        <button>AMD</button>
+                        <button>Lenovo</button>
+                        <button>MSI</button>
+                        <button>HP</button>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-block">
+                <div class="filter-header">Серия</div>
+                <div class="filter-content">
+                    <div class="filter-tags">
+                        <button>13400</button>
+                        <button>12400</button>
+                        <button>11400</button>
+                        <button>10400</button>
+                        <button>9400</button>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-block">
+                <div class="filter-header">Год выпуска</div>
+                <div class="filter-content">
+                    <div class="filter-tags">
+                        <button>2001</button>
+                        <button>2002</button>
+                        <button>2008</button>
+                        <button>2012</button>
+                        <button>2018</button>
+                        <button>2020</button>
+                        <button>2022</button>
+                        <button>2023</button>
+                        <button>2024</button>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <section class="catalog-content">
+            <h2 class="catalog-title">Каталог</h2>
+            <div class="catalog-tabs">
+                <a class="tab active" href="#">Процессоры</a>
+                <a class="tab" href="#">Видеокарты</a>
+                <a class="tab" href="#">Блоки питания</a>
+                <a class="tab" href="#">Другое</a>
+            </div>
+            <div class="catalog-search-row">
+                <div class="catalog-search">
+                    <input type="text" placeholder="Поиск">
+                    <span class="search-icon"></span>
+                </div>
+                <button class="sort-btn"></button>
+            </div>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="./media/COREI5.png" alt="i5 13400">
+                    <div class="product-title">intel core i5 13400</div>
+                    <div class="product-price">13000₽</div>
+                    <button class="order-btn">Заказать</button>
+                </div>
+                <div class="product-card">
+                    <img src="./media/I7CORE.png" alt="i7 12400">
+                    <div class="product-title">intel core i7 12400</div>
+                    <div class="product-price">12000₽</div>
+                    <button class="order-btn">Заказать</button>
+                </div>
+                <div class="product-card">
+                    <img src="./media/I39400.png" alt="i3 9400">
+                    <div class="product-title">intel core i3 9400</div>
+                    <div class="product-price">8000₽</div>
+                    <button class="order-btn">Заказать</button>
+                </div>
+                <div class="product-card">
+                    <img src="./media/I1400.png" alt="i9 14400">
+                    <div class="product-title">intel core i9 14400</div>
+                    <div class="product-price">16000₽</div>
+                    <button class="order-btn">Заказать</button>
+                </div>
+                <div class="product-card">
+                    <img src="./media/I14500png.png" alt="i3 8600">
+                    <div class="product-title">intel core i3 8600</div>
+                    <div class="product-price">9000₽</div>
+                    <button class="order-btn">Заказать</button>
+                </div>
+                <div class="product-card">
+                    <img src="./media/10400.png" alt="i5 10400">
+                    <div class="product-title">intel core i5 10400</div>
+                    <div class="product-price">11000₽</div>
+                    <button class="order-btn">Заказать</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container footer-flex">
+            <div class="footer-links">
+                <a href="#">Главная</a>
+                <a href="#">Каталог</a>
+                <a href="#">Контакты</a>
+            </div>
+            <div class="footer-links">
+                <a href="#">Договор оферты</a>
+                <a href="#">Политика конфиденциальности</a>
+                <a href="#">Условия и правила</a>
+            </div>
+        </div>
+        <div class="footer-copy">Copyright © PCSTORE, 2000-2025</div>
+    </footer>
+    <script>
+        document.querySelectorAll('.filter-header').forEach(header => {
+            header.addEventListener('click', function() {
+                const block = this.closest('.filter-block');
+                block.classList.toggle('closed');
+            });
+        });
+    </script>
+</body>
+</html>

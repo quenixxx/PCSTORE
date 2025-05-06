@@ -1,0 +1,309 @@
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+@font-face {
+    font-family: 'Benzin';
+    src: url('fonts/Benzin-Regular.woff2') format('woff2'),
+         url('fonts/Benzin-Regular.woff') format('woff'),
+         url('fonts/Benzin-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Benzin';
+    src: url('fonts/Benzin-Bold.woff2') format('woff2'),
+         url('fonts/Benzin-Bold.woff') format('woff'),
+         url('fonts/Benzin-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+body, h1, h2 {
+    margin: 0;
+    background-color: #10131A;
+}
+.container {                            
+    width: 1140px;
+    margin: 0 auto;
+    background-color: #10131A;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+h1 {
+    font-size: 28px;
+    color: white;
+    font-family: 'Benzin', sans-serif;
+    margin: 0;
+}
+
+.main-nav, .secondary-nav {
+    display: flex;
+    align-items: center;
+}
+
+.main-nav {
+    gap: 50px;
+}
+
+.secondary-nav {
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.cart-icon {
+    font-size: 100%;
+}
+.header-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0 20px 0;
+}
+.main-nav a, .secondary-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+.cart-icon img {
+    width: 28px;
+}
+.catalog-main {
+    display: flex;
+    margin-top: 40px;
+    gap: 40px;
+}
+.sidebar {
+    width: 260px;
+    background: #181b22;
+    border: 1px solid #ff0000;
+    border-radius: 16px;
+    padding: 24px 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    height: fit-content;
+    margin-top: 195px;
+}
+.filter-block h3 {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+.price-range {
+    display: flex;
+    gap: 10px;
+}
+.price-range input {
+    width: 80px;
+    padding: 6px 8px;
+    border-radius: 8px;
+    border: none;
+    background: #23242a;
+    color: #fff;
+    font-size: 15px;
+}
+.filter-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.filter-tags button {
+    background: #23242a;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 6px 14px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.filter-tags button:hover {
+    background: #ff0000;
+    color: #fff;
+}
+.catalog-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.catalog-title {
+    color: #fff;
+    font-size: 64px;
+    font-family: 'Benzin', Arial, sans-serif;
+    font-weight: bold;
+    margin-bottom: 16px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.catalog-tabs {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+.tab {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    padding-bottom: 2px;
+    border-bottom: 2px solid transparent;
+    transition: border 0.2s, color 0.2s;
+}
+.tab.active {
+    color: #ff0000;
+    border-bottom: 2px solid #ff0000;
+    font-weight: bold;
+}
+.catalog-search-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 32px;
+}
+.catalog-search {
+    position: relative;
+    flex: 1;
+}
+.catalog-search input {
+    width: 100%;
+    padding: 10px 40px 10px 16px;
+    border-radius: 10px;
+    border: none;
+    background: #23242a;
+    color: #fff;
+    font-size: 18px;
+}
+.search-icon {
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 22px;
+    height: 22px;
+    background: url('./media/search.svg') no-repeat center/contain;
+}
+.sort-btn {
+    width: 36px;
+    height: 36px;
+    background: url('./media/sort.svg') no-repeat center/contain;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.products-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+}
+.product-card {
+    background: #23242a;
+    border-radius: 16px;
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 18px 12px 18px 12px;
+    box-sizing: border-box;
+}
+.product-card img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 12px;
+}
+.product-title {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+.product-price {
+    color: #fff;
+    background: #181b22;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 2px 16px;
+    margin-bottom: 14px;
+    border: 2px solid #fff;
+    display: inline-block;
+}
+.order-btn {
+    background: #ff0000;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 10px 0;
+    width: 100%;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+.order-btn:hover {
+    background: #ff8533;
+}
+.footer-flex {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0 0 0;
+    margin-top: 80px;
+}
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+.footer-copy {
+    color: #fff;
+    text-align: center;
+    font-size: 13px;
+    margin: 24px 0 0 0;
+    padding-bottom: 24px;
+}
+.filter-header {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 12px;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.filter-header::after {
+    content: '▼';
+    font-size: 12px;
+    margin-left: 8px;
+    transition: transform 0.2s;
+}
+.filter-block.closed .filter-header::after {
+    transform: rotate(-90deg);
+}
+.filter-content {
+    transition: max-height 0.2s, opacity 0.2s;
+    overflow: hidden;
+    max-height: 500px;
+    opacity: 1;
+}
+.filter-block.closed .filter-content {
+    max-height: 0;
+    opacity: 0;
+    pointer-events: none;
+}

@@ -28,16 +28,22 @@ body, h1, h2{
     background-color: #10131A;
 }
 
+.container {
+    width: 1140px;
+    margin: 0 auto;
+    background-color: #10131A;
+}
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
+    font-size: 18px;
 }
 
 h1 {
     font-size: 28px;
-    color: white;
+    color: white;                                                                                                                                                   
     font-family: 'Benzin', sans-serif;
     margin: 0;
 }
@@ -171,6 +177,13 @@ nav a {
     color: white;
     margin: 15px 0 15px 0;
     font-size: 18px;
+}
+.card .price {
+    color: #FF0000;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    display: block;
 }
 .card button {
     background: #ff0000;
